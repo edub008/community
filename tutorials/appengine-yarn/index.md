@@ -62,6 +62,8 @@ projected usage.
 
 ## Deploying to App Engine
 
+> **_NOTE:_**  While Yarn is supported for building your application it is not currently supported for running the deployment in GAE, hence you must make sure your run script (or `entrypoint` value if being used in your app.yaml file) use NPM to serve your application.
+
 To use Yarn for your deployments to App Engine flexible environment, all you
 need is a `yarn.lock` in your application directory. Then, just deploy:
 
